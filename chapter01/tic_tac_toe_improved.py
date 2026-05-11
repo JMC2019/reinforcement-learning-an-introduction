@@ -591,11 +591,13 @@ if __name__ == '__main__':
             play_interactive()
         else:
             print("Usage: python tic_tac_toe_improved.py [train|play] [epochs]")
+        
     else:
         # Default: train and compete
         logger.info("Training for 100000 epochs...")
         train(int(1e5))
         logger.info("Competing for 1000 games...")
         compete(int(1e3))
-        logger.info("Training complete! Run with 'play' to play interactively.")
-        logger.info("Example: python tic_tac_toe_improved.py play")
+        logger.info("Training complete!.")
+        logger.info("Playingy")
+        play_interactive()
